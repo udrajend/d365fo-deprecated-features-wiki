@@ -1,0 +1,7 @@
+* [Home](/)
+* [By Module](#)
+  * [Purchasing](purchasing.md)
+  * [Inventory](inventory.md)
+* [By Version](#)
+  * [Platform Update 42](pu42.md)
+  * [Platform Update 41](pu41.md)
