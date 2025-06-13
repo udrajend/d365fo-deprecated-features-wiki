@@ -1,64 +1,22 @@
-<!-- D365FO Deprecated Features Wiki -->
 <!DOCTYPE html>
-<html lang="en">
-
+<html>
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
   <title>D365FO Deprecated Features Wiki</title>
-  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="//unpkg.com/docsify/lib/themes/vue.css">
 </head>
-
-<body class="bg-gray-100 text-gray-900">
-  <header class="bg-white shadow p-4">
-    <h1 class="text-2xl font-bold text-center">D365FO Deprecated Features</h1>
-    <p class="text-center text-sm text-gray-600">Stay up-to-date with deprecated features in Dynamics 365 Finance & Operations</p>
-  </header>
-
-  <main class="max-w-4xl mx-auto px-4 py-6">
-    <!-- Search and Filter Controls -->
-    <div class="mb-6">
-      <input type="text" placeholder="Search by keyword..." class="w-full p-2 mb-2 border border-gray-300 rounded" />
-      <div class="flex space-x-4">
-        <select class="p-2 border border-gray-300 rounded">
-          <option value="">Filter by Version</option>
-          <option value="10.0.29">10.0.29</option>
-          <option value="10.0.28">10.0.28</option>
-        </select>
-        <select class="p-2 border border-gray-300 rounded">
-          <option value="">Filter by Module</option>
-          <option value="Finance">Finance</option>
-          <option value="Supply Chain">Supply Chain</option>
-        </select>
-      </div>
-    </div>
-
-    <!-- Latest Features Section -->
-    <section class="mb-6">
-      <h2 class="text-xl font-semibold mb-4">Recently Deprecated Features</h2>
-      <div id="recentFeatures" class="space-y-4">
-        <!-- Dynamically load most recent features from JSON/CMS here -->
-        <div class="bg-white p-4 shadow rounded">
-          <h3 class="font-bold">Feature Title (e.g., Ledger Allocation Rules)</h3>
-          <p class="text-sm text-gray-600">Deprecated in Version 10.0.29 - Finance</p>
-          <p class="text-gray-700 mt-1">Microsoft recommends using financial dimension templates instead.</p>
-        </div>
-      </div>
-    </section>
-
-    <section class="mt-10">
-      <h2 class="text-xl font-semibold mb-4">Get Notified on Deprecations</h2>
-      <form class="bg-white shadow-md rounded-lg p-4 space-y-4" name="subscribeForm" method="POST" data-netlify="true" action="https://hooks.zapier.com/hooks/catch/your-webhook-url/">
-        <p class="text-sm text-gray-700">Subscribe to receive updates when a new feature is deprecated.</p>
-        <input type="email" name="email" placeholder="Enter your email" required class="w-full p-2 border border-gray-300 rounded">
-        <button type="submit" class="bg-blue-600 text-white px-4 py-2 rounded hover:bg-blue-700">Subscribe</button>
-      </form>
-    </section>
-  </main>
-
-  <footer class="text-center text-sm text-gray-500 py-4">
-    © 2025 D365FO Wiki. Built for the Dynamics community.
-  </footer>
+<body>
+  <div id="app"></div>
+  <script>
+    window.$docsify = {
+      name: 'D365FO Deprecated Features',
+      repo: '',
+      loadSidebar: true,
+      subMaxLevel: 2,
+      search: 'auto'
+    }
+  </script>
+  <script src="//unpkg.com/docsify/lib/docsify.min.js"></script>
 </body>
-
 </html>
